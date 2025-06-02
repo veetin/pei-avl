@@ -87,3 +87,23 @@ body {
     background-color: var(--secondary-accent-color);
     color: white;
 }
+
+.confirm-btn[disabled]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  top: -30px;
+  left: 0;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.confirm-btn[disabled]:hover::after {
+  opacity: 1;
+}
