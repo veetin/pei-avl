@@ -74,3 +74,11 @@ def criar_avaliacao(data: Dict, arquivos: List[UploadFile]) -> Dict:
     avaliacoes.append(nova_avaliacao)
     salvar_avaliacoes(avaliacoes)
     return nova_avaliacao
+
+
+def buscar_avaliacao_por_id(avaliacao_id: int) -> Dict:
+    avaliacoes = carregar_avaliacoes()
+    for a in avaliacoes:
+        if a["id"] == avaliacao_id:
+            return a
+    raise ValueError("Avaliação não encontrada")

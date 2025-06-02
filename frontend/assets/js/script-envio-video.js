@@ -23,7 +23,7 @@ function setupFileUpload() {
             fileNameDisplay.textContent = 'Nenhum arquivo selecionado';
         }
     });
-    
+
     document.getElementById('send-video-btn')?.addEventListener('click', () => {
         if (uploadInput.files.length === 0) {
             alert('Por favor, adicione um arquivo de vídeo antes de enviar.');

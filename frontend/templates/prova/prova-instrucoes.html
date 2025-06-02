@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instruções da Prova - Plataforma de Avaliação</title>
-    <link rel="stylesheet" href="../../assets/css/global.css">
-    <link rel="stylesheet" href="../../assets/css/instrucoes.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instruções da Prova - Plataforma de Avaliação</title>
+  <link rel="stylesheet" href="../../assets/css/global.css" />
+  <link rel="stylesheet" href="../../assets/css/instrucoes.css" />
 </head>
 <body class="instructions-body">
 
-    <main class="instructions-container">
-        <h1>Bem-vindo(a), <span class="student-name">Maria Eduarda Souza</span>!</h1>
-        <p class="subtitle">Você está prestes a iniciar a sua avaliação. Leia as informações e instruções com atenção.</p>
-        
-        <div class="test-details-summary">
-            <h2>Detalhes da Avaliação</h2>
-            <ul>
-                <li><strong>Matéria:</strong> LIBRAS Intermediário</li>
-                <li><strong>Avaliação:</strong> Prova do Módulo 2</li>
-                <li><strong>Total de Questões:</strong> 10 Questões</li>
-                <li><strong>Tipo de Questões:</strong> Múltipla Escolha e Envio de Vídeo</li>
-            </ul>
-        </div>
+  <main class="instructions-container">
+    <h1>Bem-vindo(a), <span class="student-name">Maria Eduarda Souza</span>!</h1>
+    <p class="subtitle">Você está prestes a iniciar a sua avaliação. Leia as informações e instruções com atenção.</p>
 
-        <div class="instructions-list">
-            <h2>Instruções Importantes</h2>
-            <ul>
-                <li>✓ Verifique se sua conexão com a internet está estável.</li>
-                <li>✓ Não atualize ou feche a janela do navegador durante a prova.</li>
-                <li>✓ O cronómetro iniciará assim que você clicar no botão "Iniciar Prova" e não poderá ser pausado.</li>
-                <li>✓ Para as questões de envio, tenha um arquivo de vídeo preparado ou um ambiente bem iluminado para a gravação.</li>
-            </ul>
-        </div>
-        
-        <div class="start-test-action">
-            <a href="prova-multipla-escolha" class="start-btn">Iniciar Prova Agora</a>
-        </div>
-    </main>
+    <div class="test-details-summary">
+      <h2>Detalhes da Avaliação</h2>
+      <ul>
+        <li><strong>Matéria:</strong> <span id="info-materia">Carregando...</span></li>
+        <li><strong>Avaliação:</strong> <span id="info-titulo">Carregando...</span></li>
+        <li><strong>Total de Questões:</strong> <span id="info-total">...</span></li>
+        <li><strong>Tipo de Questões:</strong> <span id="info-tipo">...</span></li>
+      </ul>
+    </div>
 
+    <div class="instructions-list">
+      <h2>Instruções Importantes</h2>
+      <ul>
+        <li>✓ Verifique se sua conexão com a internet está estável.</li>
+        <li>✓ Não atualize ou feche a janela do navegador durante a prova.</li>
+        <li>✓ O cronômetro iniciará assim que você clicar no botão "Iniciar Prova" e não poderá ser pausado.</li>
+        <li>✓ Para as questões de envio, tenha um arquivo de vídeo preparado ou um ambiente bem iluminado para a gravação.</li>
+      </ul>
+    </div>
+
+    <div class="start-test-action">
+      <a id="start-test-btn" href="#" class="start-btn">Iniciar Prova Agora</a>
+    </div>
+  </main>
+
+  <script src="../../assets/js/script-prova-instrucoes.js"></script>
 </body>
 </html>

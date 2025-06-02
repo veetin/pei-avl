@@ -1,86 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Avaliações - Plataforma LIBRAS</title>
-    <link rel="stylesheet" href="../../assets/css/global.css">
-    <link rel="stylesheet" href="../../assets/css/area.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minhas Avaliações - Plataforma LIBRAS</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/area.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="dashboard-body">
+  <main class="dashboard-container">
+    <header class="dashboard-header">
+      <div class="header-content">
+        <h1>Minhas Avaliações</h1>
+        <p>Bem-vindo(a) de volta, <span class="student-name">Maria Eduarda Souza</span>!</p>
+      </div>
+      <a href="aluno-login" class="logout-btn">Sair</a>
+    </header>
 
-    <main class="dashboard-container">
-        <header class="dashboard-header">
-            <div class="header-content">
-                <h1>Minhas Avaliações</h1>
-                <p>Bem-vindo(a) de volta, <span class="student-name">Maria Eduarda Souza</span>!</p>
-            </div>
-            <a href="aluno-login" class="logout-btn">Sair</a>
-        </header>
+    <section class="assessment-list-section">
+      <h2>Avaliações Disponíveis</h2>
+      <div id="avaliacoes-disponiveis" class="assessment-list"></div>
+    </section>
 
-        <section class="assessment-list-section">
-            <h2>Avaliações Disponíveis</h2>
-            <div class="assessment-list">
-                <div class="assessment-card available">
-                    <div class="card-icon">📚</div>
-                    <div class="card-info">
-                        <span class="card-subject">LIBRAS Intermediário</span>
-                        <h3 class="card-title">Prova do Módulo 2</h3>
-                        <span class="card-details">10 Questões • Múltipla Escolha & Envio de Vídeo</span>
-                    </div>
-                    <div class="card-action">
-                        <a href="../prova/prova-instrucoes" class="action-link-btn">Iniciar Prova</a>
-                    </div>
-                </div>
-                <div class="assessment-card available">
-                    <div class="card-icon">✍️</div>
-                    <div class="card-info">
-                        <span class="card-subject">Cultura Surda</span>
-                        <h3 class="card-title">Atividade Avaliativa 3</h3>
-                        <span class="card-details">5 Questões • Múltipla Escolha</span>
-                    </div>
-                    <div class="card-action">
-                        <a href="../prova/prova-instrucoes" class="action-link-btn">Iniciar Prova</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="assessment-list-section">
+      <h2>Avaliações Concluídas</h2>
+      <div id="avaliacoes-concluidas" class="assessment-list">
+        <!-- Lógica de avaliações concluídas poderá vir futuramente -->
+      </div>
+    </section>
+  </main>
 
-        <section class="assessment-list-section">
-            <h2>Avaliações Concluídas</h2>
-            <div class="assessment-list">
-                <div class="assessment-card completed">
-                    <div class="card-icon">✓</div>
-                    <div class="card-info">
-                        <span class="card-subject">LIBRAS Básico</span>
-                        <h3 class="card-title">Prova Final do Módulo 1</h3>
-                        <span class="card-details">Concluída em: 15/05/2025</span>
-                    </div>
-                    <div class="card-action">
-                        <div class="final-grade">
-                            <span class="grade-label">Nota Final</span>
-                            <span class="grade-value">8.5</span>
-                        </div>
-                    </div>
-                </div>
-                 <div class="assessment-card completed">
-                    <div class="card-icon">✓</div>
-                    <div class="card-info">
-                        <span class="card-subject">LIBRAS Básico</span>
-                        <h3 class="card-title">Atividade Avaliativa 2</h3>
-                        <span class="card-details">Concluída em: 01/05/2025</span>
-                    </div>
-                    <div class="card-action">
-                        <div class="final-grade">
-                            <span class="grade-label">Nota Final</span>
-                            <span class="grade-value">10.0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+  <script src="../../assets/js/script-area-aluno.js"></script>
 </body>
 </html>
