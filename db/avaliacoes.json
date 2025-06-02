@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "titulo": "prova 1",
+    "materia": "materia 1",
+    "turma": "turma 1",
+    "perguntas": [
+      {
+        "id": 1,
+        "tipo": "multipla-escolha",
+        "pergunta_video_url": "/uploads/3334afebf7d74f89b40c849b4181b497.mp4",
+        "alternativas": [
+          {
+            "id": 1,
+            "video_url": "/uploads/98b1fdaa367b47218923f3c075b33268.mp4",
+            "correta": false
+          },
+          {
+            "id": 2,
+            "video_url": "/uploads/e3b52e0dedb94712a66f82f9e1e97641.mp4",
+            "correta": true
+          },
+          {
+            "id": 3,
+            "video_url": "/uploads/75dc9955822f4c9bb8963a5e8227c7d5.mp4",
+            "correta": false
+          },
+          {
+            "id": 4,
+            "video_url": "/uploads/c3c26ee86a5e4cd88f48f24a542fabdf.mp4",
+            "correta": false
+          }
+        ]
+      }
+    ]
+  }
+]
