@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Professor - Plataforma LIBRAS</title>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/area.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Painel do Professor</h1>
+                <p>Bem-vindo(a), <span class="student-name">Dr. Ademar Miller</span>!</p>
+            </div>
+            <a href="professor-login.html" class="logout-btn">Sair</a>
+        </header>
+
+        <div class="dashboard-actions">
+            <a href="../prova/prova-criar.html" class="create-new-btn">+ Criar Nova Avaliação</a>
+        </div>
+
+        <section class="assessment-list-section">
+            <h2>Minhas Avaliações Criadas</h2>
+            <div class="assessment-list">
+                <div class="assessment-card professor available">
+                    <div class="card-info">
+                        <span class="card-subject">LIBRAS Intermediário</span>
+                        <h3 class="card-title">Prova do Módulo 2</h3>
+                        <span class="card-details">10 Questões • Publicada em 28/05/2025</span>
+                    </div>
+                    <div class="card-action-professor">
+                        <a href="#" class="prof-action-btn results">Resultados</a>
+                        <a href="#" class="prof-action-btn edit">Editar</a>
+                    </div>
+                </div>
+                <div class="assessment-card professor completed"> <div class="card-info">
+                        <span class="card-subject">Cultura Surda</span>
+                        <h3 class="card-title">Atividade Avaliativa 3</h3>
+                        <span class="card-details">5 Questões • Salvo como rascunho</span>
+                    </div>
+                    <div class="card-action-professor">
+                        <a href="pagina-criar-prova.html" class="prof-action-btn edit">Continuar Editando</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

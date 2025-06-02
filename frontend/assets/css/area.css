@@ -1,0 +1,219 @@
+/* assets/css/dashboard.css */
+
+.dashboard-body {
+    justify-content: flex-start;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color-light);
+}
+
+.dashboard-header h1 {
+    color: var(--text-primary-color);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.dashboard-header p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.logout-btn {
+    background-color: var(--secondary-accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color var(--transition-speed);
+}
+
+.logout-btn:hover {
+    background-color: var(--text-primary-color);
+}
+
+.assessment-list-section {
+    margin-bottom: 40px;
+}
+
+.assessment-list-section h2 {
+    color: var(--text-primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.assessment-list {
+    display: grid;
+    gap: 20px;
+}
+
+.assessment-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 15px var(--shadow-color-soft);
+    border-left: 5px solid;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.assessment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-color-soft);
+}
+
+.assessment-card.available {
+    border-color: var(--primary-accent-color);
+}
+
+.assessment-card.completed {
+    border-color: var(--secondary-accent-color);
+}
+
+.assessment-card.completed .card-icon {
+    color: var(--correct-color);
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    background-color: var(--bg-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.card-info {
+    flex-grow: 1;
+}
+
+.card-info .card-subject {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary-accent-color);
+}
+
+.assessment-card.completed .card-subject {
+    color: var(--text-secondary-color);
+}
+
+.card-info .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary-color);
+    margin: 2px 0;
+}
+
+.card-info .card-details {
+    font-size: 0.9rem;
+    color: var(--text-secondary-color);
+}
+
+.card-action .action-link-btn {
+    background-color: var(--primary-accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background-color var(--transition-speed);
+}
+
+.card-action .action-link-btn:hover {
+    background-color: #0056b3;
+}
+
+.card-action .final-grade {
+    background-color: var(--bg-color);
+    padding: 10px 15px;
+    border-radius: var(--border-radius-md);
+    text-align: center;
+}
+
+.final-grade .grade-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: block;
+}
+
+.final-grade .grade-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary-color);
+    display: block;
+}
+
+/* Estilos específicos do dashboard do professor */
+.dashboard-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.create-new-btn {
+    background-color: var(--correct-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all var(--transition-speed);
+}
+
+.create-new-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.assessment-card.professor .card-action-professor {
+    display: flex;
+    gap: 10px;
+}
+
+.prof-action-btn {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 1.5px solid;
+    transition: all var(--transition-speed);
+}
+
+.prof-action-btn.results {
+    border-color: var(--primary-accent-color);
+    color: var(--primary-accent-color);
+}
+
+.prof-action-btn.results:hover {
+    background-color: var(--primary-accent-color);
+    color: white;
+}
+
+.prof-action-btn.edit {
+    border-color: var(--secondary-accent-color);
+    color: var(--secondary-accent-color);
+}
+
+.prof-action-btn.edit:hover {
+    background-color: var(--secondary-accent-color);
+    color: white;
+}

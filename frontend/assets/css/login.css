@@ -1,0 +1,99 @@
+/* assets/css/login.css */
+
+.login-body {
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: var(--card-bg-color);
+    padding: 40px;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 10px 30px var(--shadow-color-soft);
+    text-align: center;
+}
+
+.login-form h1 {
+    color: var(--text-primary-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid var(--border-color-light);
+    border-radius: var(--border-radius-md);
+    font-size: 1rem;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-accent-color);
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.15);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+a.forgot-password {
+    color: var(--primary-accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: var(--primary-accent-color);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}

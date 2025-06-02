@@ -1,0 +1,89 @@
+/* assets/css/global.css */
+
+/* Estilos Globais e Variáveis CSS */
+:root {
+    --bg-color: #F8F9FA;
+    --card-bg-color: #FFFFFF;
+    --primary-accent-color: #0077FF;
+    --secondary-accent-color: #4A5568;
+    --correct-color: #28A745;
+    --incorrect-color: #DC3545;
+    --unanswered-color: #ffc107;
+
+    --text-primary-color: #1A202C;
+    --text-secondary-color: #4A5568;
+    --text-on-accent-color: #FFFFFF;
+
+    --border-color-light: #E2E8F0;
+    --shadow-color-soft: rgba(74, 85, 104, 0.1);
+    --border-radius-md: 12px;
+    --transition-speed: 0.25s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-secondary-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Estilos de Componentes Comuns */
+
+.logo-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: var(--border-color-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-secondary-color);
+    flex-shrink: 0;
+}
+
+.logo-placeholder.large {
+    width: 60px;
+    height: 60px;
+    font-size: 0.9rem;
+    margin-left: auto;  /* Margem automática à esquerda */
+    margin-right: auto; /* Margem automática à direita */
+    margin-bottom: 20px;/* Espaço abaixo do logo */
+}
+
+/* Botões Genéricos */
+.action-btn {
+    padding: 12px;
+    border-radius: var(--border-radius-md);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.action-btn:hover {
+    opacity: 0.85;
+}
+
+.confirm-btn {
+    background-color: var(--correct-color);
+    color: white;
+}
+
+.review-btn {
+    background-color: var(--unanswered-color);
+    color: white;
+}
+
+.skip-btn {
+    background-color: var(--secondary-accent-color);
+    color: white;
+}

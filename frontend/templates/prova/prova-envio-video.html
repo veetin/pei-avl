@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de LIBRAS - Envio de Vídeo</title>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/prova.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="assessment-header">
+        <div class="header-top">
+            <div class="header-logo-info">
+                <div class="logo-placeholder">Logotipo</div>
+                <div class="institute-info">
+                    <p id="info-institution">Nome do Instituto</p>
+                    <p id="info-subject">Nome da Disciplina</p>
+                </div>
+            </div>
+            <div class="student-info">
+                <p id="info-student-name">Nome do Aluno</p>
+                <p id="info-student-email">email.do.aluno@email.com</p>
+            </div>
+        </div>
+        <div class="header-status-bar">
+            <div class="test-timer">
+                <span>Tempo Decorrido:</span>
+                <span id="timer">00:00</span>
+            </div>
+            <div class="test-stats">
+                <span>Total: <strong id="stats-total">10</strong></span>
+                <span class="correct">Acertos: <strong id="stats-correct">0</strong></span>
+                <span class="incorrect">Erros: <strong id="stats-incorrect">0</strong></span>
+                <span class="unanswered">Sem Resposta: <strong id="stats-unanswered">0</strong></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div class="question-header">
+            <h2 id="question-title-counter">Pergunta 2 de 10 (Envio de Vídeo)</h2>
+        </div>
+
+        <div class="question-body">
+            <div class="question-media-column-large">
+                <div class="media-card question-card">
+                    <div class="card-header">Vídeo da Pergunta</div>
+                    <div class="media-content">
+                        <video controls autoplay muted loop poster="https://placehold.co/600x338/1A202C/718096?text=Vídeo+da+Pergunta">
+                            <source src="https://cdn.coverr.co/videos/coverr-signing-no-problem-in-sign-language-7917/1080p.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-options-column">
+                <div class="media-card student-response-card large">
+                    <div class="card-header">Envie sua Resposta em Vídeo</div>
+                    <div class="media-content student-video-placeholder large">
+                        <div class="file-upload-area">
+                            <input type="file" id="video-upload-input" accept="video/*" hidden>
+                            <label for="video-upload-input" class="upload-btn">
+                                📂 Adicionar Arquivo de Vídeo
+                            </label>
+                            <p class="file-name-display" id="file-name-display">Nenhum arquivo selecionado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-actions">
+                    <button class="action-btn confirm-btn" id="send-video-btn">Enviar Vídeo</button>
+                    <button class="action-btn skip-btn" id="skip-button">Pular Questão</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page-navigation">
+            <a href="prova-multipla-escolha.html" class="nav-btn">← Questão Anterior</a>
+            <a href="#" class="nav-btn disabled">Próxima Questão →</a>
+        </div>
+    </main>
+    <script src="../../assets/js/script-envio-video.js"></script>
+</body>
+</html>
