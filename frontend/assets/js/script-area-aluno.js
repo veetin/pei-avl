@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <span class="card-details">${prova.perguntas.length} Questões</span>
         </div>
         <div class="card-action">
-            <a href="../prova/prova-instrucoes?id=${prova.id}" class="action-link-btn">Iniciar Prova</a>
+            <a href="../prova/prova-instrucoes.html?id=${prova.id}" class="action-link-btn">Iniciar Prova</a>
         </div>
       `;
       container.appendChild(card);

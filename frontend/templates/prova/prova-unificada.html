@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prova - Unificada</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/prova.css">
+</head>
+<body class="prova-body">
+
+  <header class="assessment-header">
+    <div class="header-top">
+      <div class="header-logo-info">
+        <div class="logo-placeholder">Logotipo</div>
+        <div class="institute-info">
+          <p id="info-institution">Instituto</p>
+          <p id="info-subject">Matéria</p>
+        </div>
+      </div>
+      <div class="student-info">
+        <p id="info-student-name">Aluno</p>
+        <p id="info-student-email">aluno@email.com</p>
+      </div>
+    </div>
+    <div class="header-status-bar">
+      <div class="test-timer">
+        <span>Tempo:</span>
+        <span id="timer">00:00</span>
+      </div>
+      <div class="test-stats">
+        <span>Total: <strong id="stats-total">--</strong></span>
+        <span class="correct">Acertos: <strong id="stats-correct">0</strong></span>
+        <span class="incorrect">Erros: <strong id="stats-incorrect">0</strong></span>
+        <span class="unanswered">Sem Resposta: <strong id="stats-unanswered">0</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="quiz-container">
+    <div class="question-header">
+      <h2 id="question-title-counter">Pergunta</h2>
+    </div>
+
+    <div class="question-body">
+
+      <!-- Coluna do vídeo da pergunta -->
+      <div class="question-media-column-large">
+        <div class="media-card question-card">
+          <div class="card-header">Vídeo da Pergunta</div>
+          <div class="media-content">
+            <video id="question-video" controls autoplay muted loop></video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna para múltipla escolha -->
+      <div class="question-options-column" id="multipla-escolha-container" style="display: none;">
+        <div class="answers-grid" id="answer-options-container">
+          <!-- Alternativas serão inseridas via JS -->
+        </div>
+
+        <div class="question-actions">
+          <button class="action-btn confirm-btn" id="confirm-button">Confirmar Resposta</button>
+          <button class="action-btn review-btn" id="review-button">Revisar Depois</button>
+          <button class="action-btn skip-btn" id="skip-button">Pular Questão</button>
+        </div>
+      </div>
+
+      <!-- Coluna para envio de vídeo -->
+      <div class="question-options-column" id="envio-video-container" style="display: none;">
+        <div class="media-card student-response-card large">
+          <div class="card-header">Envie sua Resposta em Vídeo</div>
+          <div class="media-content student-video-placeholder large">
+            <div class="file-upload-area">
+              <input type="file" id="video-upload-input" accept="video/*" hidden>
+              <label for="video-upload-input" class="upload-btn">📂 Adicionar Arquivo de Vídeo</label>
+              <p class="file-name-display" id="file-name-display">Nenhum arquivo selecionado</p>
+            </div>
+          </div>
+        </div>
+        <div class="question-actions">
+          <button class="action-btn confirm-btn" id="send-video-btn">Enviar Vídeo</button>
+          <button class="action-btn skip-btn" id="skip-button-video">Pular Questão</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="page-navigation">
+      <a href="#" id="prev-question" class="nav-btn">← Questão Anterior</a>
+      <a href="#" id="next-question" class="nav-btn">Próxima Questão →</a>
+    </div>
+  </main>
+
+  <script src="../../assets/js/script-prova-unificada.js"></script>
+</body>
+</html>

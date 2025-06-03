@@ -280,3 +280,35 @@
         text-align: center;
     }
 }
+
+.prova-body .assessment-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+.answer-media {
+  width: 100%;
+  height: 200px;
+  background-color: #f4f4f4; /* garante espaço mesmo sem vídeo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.answer-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.answer-option {
+  min-height: 240px; /* altura mínima padrão */
+}
+
+.answer-media video {
+  transition: height 0.3s ease;
+}
