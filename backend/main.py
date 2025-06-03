@@ -18,9 +18,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Servir o frontend
-app.mount("/", StaticFiles(directory="/home/vhugo/workspace/faculdade/pei/avl/frontend", html=True), name="frontend")
 
+
+@app.get("/")
+def home():
+    return 'ok'
 
 @app.get("/api/avaliacoes/{avaliacao_id}/questoes")
 def obter_questoes(avaliacao_id: int):
@@ -37,6 +39,8 @@ def get_avaliacoes_disponiveis():
 @app.get("/api/aluno/avaliacao/{avaliacao_id}")
 def get_avaliacao_completa(avaliacao_id: int):
     todas = carregar_avaliacoes()
+    
+    
     for a in todas:
         if a["id"] == avaliacao_id:
             return a
@@ -101,3 +105,5 @@ def listar_avaliacoes():
 # Servir os vídeos
 app.mount("/uploads", StaticFiles(directory=UPLOAD_DIR), name="uploads")
 
+# Servir o frontend
+app.mount("/", StaticFiles(directory="/home/vhugo/workspace/faculdade/pei/avl/frontend", html=True), name="frontend")

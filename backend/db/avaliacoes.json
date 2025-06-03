@@ -1,28 +1,82 @@
 [
   {
     "id": 1,
-    "titulo": "avaliacao de teste",
-    "materia": "materia de teste",
-    "turma": "1",
+    "titulo": "teste avaliacao",
+    "materia": "materia 1",
+    "turma": "turma 1",
     "perguntas": [
       {
         "id": 1,
+        "tipo": "multipla-escolha",
+        "pergunta_video_url": "/uploads/avaliacoes/1/pergunta_1_ba159ea2db1c44cd9d6cda7374f93ab1.mp4",
+        "alternativas": [
+          {
+            "id": 1,
+            "video_url": "/uploads/avaliacoes/1/alt_2_1_386d51f5a3ff47eb8d3b4474a940d76b.mp4",
+            "correta": false
+          },
+          {
+            "id": 2,
+            "video_url": "/uploads/avaliacoes/1/alt_2_2_19d7b71fc8a24a4a9b6a655160ae2f83.mp4",
+            "correta": true
+          },
+          {
+            "id": 3,
+            "video_url": "/uploads/avaliacoes/1/alt_2_3_a42f4e7f3da64d9c93d18384ec51fb54.mp4",
+            "correta": false
+          },
+          {
+            "id": 4,
+            "video_url": "/uploads/avaliacoes/1/alt_2_4_6d78a690543b4e1681690f80ecd3f7fb.mp4",
+            "correta": false
+          }
+        ]
+      },
+      {
+        "id": 2,
         "tipo": "envio-video",
-        "pergunta_video_url": "/uploads/avaliacoes/1/pergunta_1_7b78aeb79d3a4c2ea7642e565e882da3.mp4",
+        "pergunta_video_url": "/uploads/avaliacoes/1/pergunta_2_a11076173f2443c297101ad490514796.mp4",
         "alternativas": []
+      },
+      {
+        "id": 3,
+        "tipo": "multipla-escolha",
+        "pergunta_video_url": "/uploads/avaliacoes/1/pergunta_3_21be2cf609f246eab7702f47d983c91a.mp4",
+        "alternativas": [
+          {
+            "id": 5,
+            "video_url": "/uploads/avaliacoes/1/alt_4_5_a4b2a2081a3b4ac8b5b96a2aeb6d83d5.mp4",
+            "correta": true
+          },
+          {
+            "id": 6,
+            "video_url": "/uploads/avaliacoes/1/alt_4_6_ee4512afd7c5471ba346b056ace7cd8d.mp4",
+            "correta": false
+          },
+          {
+            "id": 7,
+            "video_url": "/uploads/avaliacoes/1/alt_4_7_4bf3952505744765b3cf2d8e27f34995.mp4",
+            "correta": false
+          },
+          {
+            "id": 8,
+            "video_url": "/uploads/avaliacoes/1/alt_4_8_20dd4cf11811424a9efb66bff5e97512.mp4",
+            "correta": false
+          }
+        ]
       }
     ]
   },
   {
     "id": 2,
-    "titulo": "teste2",
-    "materia": "libras",
-    "turma": "1",
+    "titulo": "prova 2",
+    "materia": "asd",
+    "turma": "sda",
     "perguntas": [
       {
         "id": 1,
         "tipo": "envio-video",
-        "pergunta_video_url": "/uploads/avaliacoes/2/pergunta_1_f763189779354d1485d6b6aa2f3f7e5f.mp4",
+        "pergunta_video_url": "/uploads/avaliacoes/2/pergunta_1_b3bca57bb94e4278a540e4f1207bb2ca.mp4",
         "alternativas": []
       }
     ]
